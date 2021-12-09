@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link type = "text/css" href = "style.css" rel="stylesheet">    
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+  </head>
+  <body background="images/bg.jpg">
+    <header>               
+        <div class="navbar">
+            <div class="container">
+                <img src="images/logo.jpg" class="logo">
+                <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                <a href="postarticle.html"><i class="fa fa-fw fa-search"></i> Post a Article</a>
+                <a href="#"><i class="fa fa-fw fa-envelope"></i> About</a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </header><br><br><br>
+        
+      <center><button type="button" class="btn btn-info" id="clickBtn" data-toggle="modal" data-target="#exampleModal">
+        Click here to add Article
+      </button></center>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalLabel"><strong>New Article</strong></h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <input type="text" name="username" id="username" placeholder="Enter Your Name" ><br><br>
+              <textarea placeholder="Enter Your Article" class="form-control" id="article" row="15" cols="100"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close">Close</button>
+              <button  type="button" class="btn btn-primary" id="submit" onclick="addnewarticle()">Post</button>
+            </div>
+          </div>
+        </div>
+      </div><br><br><br>
+      <footer style="background: #ffffff;" class="page-footer font-small blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <p>Creative Blog is part of Future place, an international media group and leading digital publisher.</p>
+            <a href="https://simplilearn.com/">Visit our corporate site.</a>
+            <p>© Future Publishing Limited Quay House, The Ambury, Bath BA1 1UA. All rights reserved. England and Wales company registration number 2008885.</p>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
